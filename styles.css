@@ -39,6 +39,27 @@ html, body{
 text-transform: uppercase;
 }
 
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #96c11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+
+#cursor-b{
+    height: 400px;
+    width: 400px;
+    background-color: #96c11E2b;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+    
+}
+
 video{
     height: 100%;
     width: 100%;
@@ -61,6 +82,7 @@ background-color: rgba(0, 0, 0, 0.37);
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    z-index: 10;
   
 }
 
@@ -99,5 +121,61 @@ background-color: rgba(0, 0, 0, 0.37);
 
     height: 100vh;
     width: 100%;
+    z-index: 10;
 
+}
+
+#scroller{
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10
+
+}
+
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+#scroller h4{
+    display: inline-block;
+    font-size: 90px;
+    font-weight: 900px;
+    font-family: gilroy;
+    margin-right: 15px;
+    transition: all linear 0.5s;
+
+    color:transparent;
+    -webkit-text-stroke: 2px #96c11E;
+}
+
+#scroller h4:hover{
+    color:#96c11E;
+}
+
+@keyframes scroll {
+
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
 }
