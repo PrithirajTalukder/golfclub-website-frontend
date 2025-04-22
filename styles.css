@@ -163,6 +163,7 @@ background-color: rgba(0, 0, 0, 0.37);
 
     color:transparent;
     -webkit-text-stroke: 2px #96c11E;
+    margin-bottom: 40px;
 }
 
 #scroller h4:hover{
@@ -178,4 +179,58 @@ background-color: rgba(0, 0, 0, 0.37);
         transform: translateX(-100%);
     }
     
+}
+
+#about-us{
+    height: 40vh;
+    width: 100%;
+    display: flex;    
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    position: relative;
+
+}
+
+#about-us img{
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#about-us-in{
+    width: 40%;
+    text-align: center;
+}
+
+#about-us-in h3{
+    font-size: 54px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+#about-us-in p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+#cards-container{
+    background-color: red;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.card{
+    background-color: violet;
+    height: 80%;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
 }
