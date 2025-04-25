@@ -102,6 +102,32 @@ background-color: rgba(0, 0, 0, 0.37);
     z-index: -1;
 }
 
+#page1 #arrow{
+    height: 250px;
+    width: 250px;
+    border: 2px solid #95c11E;
+    position: absolute;
+    display: flex;
+align-items: center;
+justify-content: center;
+left: -2%;
+bottom: 0%;
+border-radius: 50%;
+transition: all ease 0.5s;
+
+}
+
+#page1 #arrow i{
+        font-size: 40px;
+        font-weight: 800;
+
+}
+
+#page1 #arrow:hover{
+    scale: 0.4;
+    background-color: #96c11E;
+}
+
 
 
 #page1 h2{
@@ -419,3 +445,9 @@ background-color: rgba(0, 0, 0, 0.37);
     
 }
 
+
+#footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a, #ace022 )
+}
