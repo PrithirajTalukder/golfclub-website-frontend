@@ -289,15 +289,15 @@ transition: all ease 0.5s;
 }
 
 #card1{
-    background-image: url(/golfclub-website-frontend/assets/card1.avif);
+    background-image: url(/assets/card1.avif);
 }
 
 #card2{
-    background-image: url(/golfclub-website-frontend/assets/card2.webp);
+    background-image: url(/assets/card2.webp);
 }
 
 #card3{
-    background-image: url(/golfclub-website-frontend/assets/card3.avif);
+    background-image: url(/assets/card3.avif);
 }
 
 .overlay{
